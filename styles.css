@@ -1,0 +1,165 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.hero {
+    background: url('macbook-air-hero.jpg') no-repeat center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 5%;
+    flex-wrap: wrap;
+}
+
+.model {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.model img {
+    max-width: 100%;
+    border-radius: 0.75rem;
+}
+
+.specs {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.specs h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.spec-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header {
+    font-weight: bold;
+    background: #f1f1f1;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+.feature {
+    font-weight: 700;
+    color: #000000;
+    font-size: 17px;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.source-link {
+    color: #1a0dab;
+    text-decoration: none;
+    border-bottom: 1px dashed #1a0dab;
+}
+
+.source-link:hover {
+    border-bottom: 1px solid #1a0dab;
+}
+
+/* Apple-styled button */
+.apple-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #007aff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.apple-button:hover {
+    background-color: #005ec4;
+    transform: translateY(-2px);
+}
+
+.apple-button:active {
+    background-color: #004a99;
+    transform: translateY(0);
+}
+
+.apple-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.3);
+}
