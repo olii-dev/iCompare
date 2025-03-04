@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     margin: 0;
@@ -17,6 +18,7 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -124,7 +126,7 @@ html {
 }
 
 .source-link {
-    color: #1a0dab;
+    color: grey;
     text-decoration: none;
     border-bottom: 1px dashed #1a0dab;
 }
@@ -162,4 +164,63 @@ html {
 .apple-button:focus {
     outline: none;
     box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.3);
+}
+
+.recommendation {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.recommendation h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.recommendation p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model {
+        width: 90%;
+    }
+
+    .specs {
+        width: 95%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .feature {
+        font-size: 1rem;
+    }
 }
